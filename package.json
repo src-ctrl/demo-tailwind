@@ -1,0 +1,22 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/index.css -o dist/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.0.2",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "postcss": "^8.1.7",
+    "postcss-loader": "^4.0.4",
+    "webpack": "^5.5.1",
+    "webpack-cli": "^4.2.0"
+  }
+}
