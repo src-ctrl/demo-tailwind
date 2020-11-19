@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -10,8 +11,15 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: [
+            'style-loader',
+            'css-loader',
+            'postcss-loader',
+        ],
       },
     ],
+  },
+  devServer: {
+    contentBase: "./dist",
   },
 };
